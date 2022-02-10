@@ -41,6 +41,15 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onPause() {
+        // カウント数の保存
+        val editor = prefs.edit()
+        editor.putInt("count", count)
+        editor.apply()
+
+        super.onPause()
+    }
+
     private fun setCountText() {
         binding.countText.text = count.toString()
         when (count % 2) {
