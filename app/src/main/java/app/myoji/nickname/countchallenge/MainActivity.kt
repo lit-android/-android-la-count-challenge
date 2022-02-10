@@ -1,5 +1,6 @@
 package app.myoji.nickname.countchallenge
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import app.myoji.nickname.countchallenge.databinding.ActivityMainBinding
@@ -15,11 +16,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater).apply { setContentView(this.root) }
 
-        binding.countText.text = count.toString()
+        setCountText()
 
         binding.upButton.setOnClickListener {
             count++
-            binding.countText.text = count.toString()
+            setCountText()
         }
+    }
+
+    private fun setCountText() {
+        binding.countText.text = count.toString()
+        when (count % 2) {
+            0 -> {
+                binding.countText.setTextColor(Color.RED)
+            }
+            1 -> {
+                binding.countText.setTextColor(Color.BLUE)
+            }
+         }
     }
 }
