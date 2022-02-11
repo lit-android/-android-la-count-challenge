@@ -39,12 +39,24 @@ class TutorialActivity : AppCompatActivity(), ThirdFragment.ClickListener {
     }
 
     override fun onClickButton() {
+        // 初回起動のフラグの更新
+        val prefs = getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE)
+        val editor = prefs.edit()
+        editor.putBoolean(FIRST_LAUNCH_KEY, false)
+        editor.apply()
+
+        // TitleActivityに遷移
         val toTitleActivityIntent = Intent(this, TitleActivity::class.java)
         startActivity(toTitleActivityIntent)
+
+        // TutorialActivityの終了
         finish()
     }
 
     companion object {
+        const val SHARED_PREFERENCES_NAME = "Tutorial"
+        const val FIRST_LAUNCH_KEY = "first"
+
         fun newIntent(context: Context): Intent {
             return Intent(context, TutorialActivity::class.java)
         }
