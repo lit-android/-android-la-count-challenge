@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CountChallenge">
         <activity
+            android:name=".TutorialActivity"
+            android:exported="false" />
+        <activity
             android:name=".TitleActivity"
             android:exported="true">
             <intent-filter>
