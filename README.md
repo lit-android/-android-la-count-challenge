@@ -52,6 +52,7 @@
   - build.gradle(:app)にLottieの依存関係を追加しよう
   - 参考: https://github.com/airbnb/lottie-android
 - LottieAnimationViewを配置してアニメーションを表示させよう
+  - アニメーション素材はres>rawに入っているandroid.jsonを使おう
 
 | タイトル画面のレイアウト例 |
 | ----- |
