@@ -24,6 +24,16 @@
 | ----- | ----- |
 |<img width="200" alt="3_1" src="https://user-images.githubusercontent.com/50792596/153572206-87b28842-0893-4f7d-8e90-cde45d6996c8.png">|<img width="200" alt="3_2" src="https://user-images.githubusercontent.com/50792596/153572219-61e8504d-9dcb-4941-a69a-24aa8d9bdf35.png">|
 
+#### Material Designを使ってみよう (余裕がある/興味がある人向け)
+- EditTextのhint属性に「今日のご飯は?」と入力してみよう
+- EditTextをMaterial Design ComponentsのText fieldsに置き換えよう
+  - 参考: [Text fields](https://material.io/components/text-fields/android)
+  - スクリーンショットは[Outlined text field](https://material.io/components/text-fields/android#outlined-text-field)
+
+| 未入力時 | 入力時 |
+| ----- | ----- |
+|<img width="200" alt="3_1_1" src="https://user-images.githubusercontent.com/50792596/153775738-8a0b7cc3-a0d9-454a-afec-a8a2865cdea4.png">|<img width="200" alt="3_2" src="https://user-images.githubusercontent.com/50792596/153775775-8e651cb7-b1ad-4504-aa68-bdfc66c117f8.png">|
+
 ### 4. 効果音をつけよう
 - 音源のリンクから「システム39」をogg形式でダウンロードしよう
   - 音源のリンク: https://maou.audio/category/se/se-system/page/2/
